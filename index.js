@@ -19,13 +19,12 @@ async function main() {
         break;
     }
     shape.setColour(userInput.shapeColour);
-
     const svgData = {
       svgShape: shape.render(),
       text: userInput.tag,
       textColour: userInput.textColour
-    }
-    const svgContent = `<svg width="300" height="200">
+    }*
+    const svgContent = `<*svg width="300" height="200">
                             ${svgData.svgShape}
                             <text x="50%" y="50%" fill="${svgData.textColour}" dominant-baseline="middle" text-anchor="middle">${svgData.text}</text></svg>`;
 
@@ -35,7 +34,7 @@ async function main() {
     });
   } catch (error) {
     console.error('Error:', error);
-  }
+  }     *
 
 }
 
